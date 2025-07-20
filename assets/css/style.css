@@ -285,7 +285,7 @@ body.nav-active { overflow: hidden; }
   display: none;
 }
 
-.header .mutwe{
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -293,7 +293,10 @@ body.nav-active { overflow: hidden; }
   padding-block: 20px;
   box-shadow: var(--shadow-1);
   z-index: 4;
-  color: #fff;
+}
+.mutwe{
+  background-color: #fff;
+  color: #333;
 }
 
 
