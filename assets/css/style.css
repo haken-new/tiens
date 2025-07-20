@@ -533,11 +533,11 @@ body.nav-active { overflow: hidden; }
   background-color: var(--cadet-blue-crayola);
   box-shadow: 0px 1px 10px #fff, 0px 1px 10px #000;
 }
-
+/* 
 .hero {
   padding-block-start: calc(var(--section-padding) + 70px);
   text-align: center;
-}
+} */
 
 .hero .container {
   display: grid;
@@ -682,17 +682,17 @@ body.nav-active { overflow: hidden; }
   }
 }
 
-.service { text-align: center; }
+.serviced { text-align: center; }
 
-.service .section-title { margin-block-end: 50px; }
+.serviced .section-title { margin-block-end: 50px; }
 
-.service-card {
+.serviced-card {
   padding: 40px;
   box-shadow: var(--shadow-4);
   border-radius: var(--radius-7);
 }
 
-.service-card .card-icon {
+.serviced-card .card-icon {
   width: 60px;
   height: 60px;
   background-color: var(--violet-blue-crayola);
@@ -704,11 +704,11 @@ body.nav-active { overflow: hidden; }
   margin-inline: auto;
 }
 
-.service-card .card-icon ion-icon { --ionicon-stroke-width: 50px; }
+.serviced-card .card-icon ion-icon { --ionicon-stroke-width: 50px; }
 
-.service-card .card-title { margin-block: 16px 10px; }
+.serviced-card .card-title { margin-block: 16px 10px; }
 
-.service-card .btn-text {
+.serviced-card .btn-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -719,7 +719,7 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.service-card .btn-text:is(:hover, :focus-visible) { opacity: 0.9; }
+.serviced-card .btn-text:is(:hover, :focus-visible) { opacity: 0.9; }
 
 
 
@@ -1159,7 +1159,7 @@ body.nav-active { overflow: hidden; }
   *SERVICE
   */
 
-  .service .section-title {
+  .serviced .section-title {
     max-width: 30ch;
     margin-inline: auto;
   }
@@ -1347,7 +1347,7 @@ body.nav-active { overflow: hidden; }
   * SERVICE
   */
 
-  .service .grid-list { grid-template-columns: repeat(2, 1fr); }
+  .serviced .grid-list { grid-template-columns: repeat(2, 1fr); }
 
 
 
