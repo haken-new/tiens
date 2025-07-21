@@ -8,7 +8,7 @@
 
 
 
-
+@import
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -286,6 +286,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .headers {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
