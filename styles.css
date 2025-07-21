@@ -208,6 +208,9 @@ body {
     border-bottom: 1px solid hsl(var(--border));
     box-shadow: var(--shadow-card);
 }
+.headers{
+    display: none;
+}
 
 .nav {
     position: relative;
