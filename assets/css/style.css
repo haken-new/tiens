@@ -346,6 +346,11 @@ body.nav-active { overflow: hidden; }
   color: var(--charcoal);
 }
 
+@media (min-width: 768px) {
+  .header .container .logo img {
+    display: none;
+  }
+}
 
 .navbar{
   position: fixed;
@@ -438,7 +443,7 @@ body.nav-active { overflow: hidden; }
 
 @media (min-width: 768px) {
   .landing {
-    margin-top: -45px;
+    margin-top: -40px;
   }
 }
 

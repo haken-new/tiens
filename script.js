@@ -100,37 +100,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Contact form handling
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+    // const contactForm = document.getElementById('contactForm');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', function(e) {
+    //         e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
             
-            // Simple validation
-            const requiredFields = this.querySelectorAll('[required]');
-            let isValid = true;
+    //         const formData = new FormData(this);
+    //         const data = Object.fromEntries(formData);
             
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.style.borderColor = 'hsl(var(--destructive))';
-                } else {
-                    field.style.borderColor = 'hsl(var(--border))';
-                }
-            });
+           
+    //         const requiredFields = this.querySelectorAll('[required]');
+    //         let isValid = true;
             
-            if (isValid) {
-                // Show success message
-                showNotification('Message sent successfully! We\'ll respond within 24 hours.', 'success');
-                this.reset();
-            } else {
-                showNotification('Please fill in all required fields.', 'error');
-            }
-        });
-    }
+    //         requiredFields.forEach(field => {
+    //             if (!field.value.trim()) {
+    //                 isValid = false;
+    //                 field.style.borderColor = 'hsl(var(--destructive))';
+    //             } else {
+    //                 field.style.borderColor = 'hsl(var(--border))';
+    //             }
+    //         });
+            
+    //         if (isValid) {
+                
+    //             showNotification('Message sent successfully! We\'ll respond within 24 hours.', 'success');
+    //             this.reset();
+    //         } else {
+    //             showNotification('Please fill in all required fields.', 'error');
+    //         }
+    //     });
+    // }
 
     // Newsletter form handling
     const newsletterForm = document.querySelector('.newsletter-form');
