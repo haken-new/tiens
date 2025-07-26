@@ -6,21 +6,64 @@
     <title>Mathematics Learning - TIENS! Ltd</title>
     <link rel="stylesheet" href="math-styles.css">
      <link rel="stylesheet" href="design.css">
+     <link rel="stylesheet" href="assets/css/math learning.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=article_person" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=article_person" />
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="nav-brand">
-                <h2>TIENS! Mathematics</h2>
+        <nav class="nav">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="img-logo">
+                        <img src="images/logo/tienslogo.png" alt="">
+                    </div>
+                    <div class="info-logo">
+                    <h1 class="logo-title">TIENS!</h1>
+                    <p class="logo-subtitle">Tiro Engineering Services Ltd</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="math-learning.html" class="nav-link">Maths learning</a>
+                    <a href="vincent.html" class="nav-link">Founder</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-cta" id="notificationBtn">
+                    <button type="button" class="btn btn-professional btn-sm" onclick="notificationBtn()"><i class="fa-solid fa-bell fa-bounce"></i> Notification</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
             </div>
-            <nav class="nav">
-                <a href="home.html" class="nav-link">Home</a>
-                <a href="math-videos.html" class="nav-link">Online Learning</a>
-                <a href="#practice" class="nav-link">Practice</a>
-                <a href="#progress" class="nav-link">Progress</a>
-            </nav>
-        </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="math-learning.html" class="mobile-nav-link">Maths Learning</a>
+                    <a href="vincent.html" class="mobile-nav-link">Founder</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <button class="btn btn-professional btn-sm mobile-cta" onclick="notificationBtn()"><i class="fa-solid fa-bell fa-bounce"></i> Notification</button>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -273,5 +316,8 @@
     </footer>
 
     <script src="assets/js/math.js"></script>
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
