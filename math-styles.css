@@ -59,6 +59,64 @@ body {
     color: #667eea;
 }
 
+/* === Mobile Nav Enhancer === */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: #111;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 20px;
+        gap: 20px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .close-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    /* Hide nav by default on mobile */
+    .nav-link {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+}
+
+
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
@@ -99,6 +157,40 @@ body {
 .stat-label {
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.mysterious {
+    display: flex;
+    justify-content: canter;
+    align-items: center;
+    gap: 5px;
+}
+.mysterious .giti {
+   display: none;
+}
+
+@media (max-width: 768px) {
+.mysterious {
+    margin: 10px;
+    
+}
+.hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mysterious .giti {
+    display: block;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px #333;
+}
+.mysterious a {
+    text-decoration: none;
+    color: #fff;
+}
 }
 
 /* Topics Section */

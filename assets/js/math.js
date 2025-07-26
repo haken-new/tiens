@@ -458,3 +458,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
  }
  });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const closeNav = document.getElementById("closeNav");
+
+    if (menuToggle && navLinks && closeNav) {
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.add("active");
+        });
+
+        closeNav.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    }
+});
