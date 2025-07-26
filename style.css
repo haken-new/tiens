@@ -1,0 +1,39 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0; padding: 0;
+}
+.video-section {
+  padding: 60px 20px; background: #f9f9f9;
+}
+.video-section h1 {
+  text-align: center; font-size: 2em; margin-bottom: 30px; color: #222;
+}
+.video-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px; max-width: 1200px; margin: 0 auto;
+}
+.video-tile {
+  cursor: pointer; transition: transform 0.3s ease;
+}
+.video-tile:hover {
+  transform: scale(1.05);
+}
+.video-tile img {
+  width: 100%; border-radius: 10px;
+}
+.video-popup {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.85); display: flex; align-items: center;
+  justify-content: center; z-index: 9999; display: none;
+}
+.video-popup iframe {
+  width: 90%; height: 60vh; border: none; border-radius: 12px;
+}
+.popup-close {
+  position: absolute; top: 30px; right: 30px; font-size: 32px;
+  color: white; cursor: pointer;
+}
+@media (max-width: 768px) {
+  .video-popup iframe { height: 40vh; }
+}
