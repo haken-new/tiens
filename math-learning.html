@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Learning - TIENS! Ltd</title>
+    <link rel="stylesheet" href="math-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>TIENS! Mathematics</h2>
+            </div>
+            <nav class="nav">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="#topics" class="nav-link">Topics</a>
+                <a href="#practice" class="nav-link">Practice</a>
+                <a href="#progress" class="nav-link">Progress</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Master Mathematics</h1>
+                    <p>Interactive learning platform with step-by-step solutions</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" id="problemsSolved">0</span>
+                            <span class="stat-label">Problems Solved</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="accuracyRate">0%</span>
+                            <span class="stat-label">Accuracy Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="currentLevel">1</span>
+                            <span class="stat-label">Current Level</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="topics" class="topics">
+            <div class="container">
+                <h2>Mathematics Topics</h2>
+                <div class="topics-grid">
+                    <div class="topic-card" data-topic="arithmetic">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Arithmetic</h3>
+                        <p>Basic operations: addition, subtraction, multiplication, division</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="topic-card" data-topic="algebra">
+                        <i class="fas fa-square-root-alt"></i>
+                        <h3>Algebra</h3>
+                        <p>Variables, equations, and algebraic expressions</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="topic-card" data-topic="geometry">
+                        <i class="fas fa-shapes"></i>
+                        <h3>Geometry</h3>
+                        <p>Shapes, angles, area, and volume calculations</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="topic-card" data-topic="fractions">
+                        <i class="fas fa-fraction"></i>
+                        <h3>Fractions</h3>
+                        <p>Working with fractions and decimal numbers</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section id="practice" class="practice">
+            <div class="container">
+                <h2>Practice Problems</h2>
+                <div class="practice-area">
+                    <div class="difficulty-selector">
+                        <button class="difficulty-btn active" data-level="easy">Easy</button>
+                        <button class="difficulty-btn" data-level="medium">Medium</button>
+                        <button class="difficulty-btn" data-level="hard">Hard</button>
+                    </div>
+                    
+                    <div class="problem-container">
+                        <div class="problem-display">
+                            <div class="problem-text" id="problemText">Click "New Problem" to start</div>
+                            <div class="problem-work" id="problemWork"></div>
+                        </div>
+                        
+                        <div class="answer-section">
+                            <input type="text" id="answerInput" placeholder="Enter your answer" disabled>
+                            <div class="answer-buttons">
+                                <button id="submitBtn" disabled>Submit</button>
+                                <button id="hintBtn" disabled>Hint</button>
+                                <button id="newProblemBtn">New Problem</button>
+                            </div>
+                        </div>
+                        
+                        <div class="result-display" id="resultDisplay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="progress" class="progress-section">
+            <div class="container">
+                <h2>Your Progress</h2>
+                <div class="progress-grid">
+                    <div class="progress-card">
+                        <h3>Recent Activity</h3>
+                        <div class="activity-list" id="activityList">
+                            <p>No recent activity</p>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <h3>Achievements</h3>
+                        <div class="achievements" id="achievements">
+                            <div class="achievement locked">
+                                <i class="fas fa-trophy"></i>
+                                <span>First Problem (0/1)</span>
+                            </div>
+                            <div class="achievement locked">
+                                <i class="fas fa-star"></i>
+                                <span>10 Correct (0/10)</span>
+                            </div>
+                            <div class="achievement locked">
+                                <i class="fas fa-medal"></i>
+                                <span>Perfect Score (0/1)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TIENS! Ltd - Mathematics Learning Platform</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/math.js"></script>
+</body>
+</html>
